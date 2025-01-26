@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using System.Text;
 
+
 namespace Assi1.Aggregates
 {
-    internal interface Aggregate
+    public interface Aggregate
     {
+        Iterator CreateIterator();
     }
 }
