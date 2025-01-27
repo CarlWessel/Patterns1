@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Assi1.Aggregates
 {
-    public interface Aggregate
+    interface Aggregate
     {
         Iterator CreateIterator();
     }

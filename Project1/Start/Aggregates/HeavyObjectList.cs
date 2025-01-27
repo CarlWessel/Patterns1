@@ -4,21 +4,21 @@ using System.Text;
 
 namespace Assi1.Aggregates
 {
-    public class HeavyObjectList : Aggregate
+    class HeavyObjectList : Aggregate
     {
-        protected List<object> container = new List<object>();
+        protected List<HeavyObject> container = new List<HeavyObject>();
 
         public Iterator CreateIterator()
         {
             return new HeavyObjectIterator(this);
         }
 
-        public void Add(object item)
+        public void Add(HeavyObject item)
         {
             container.Add(item);
         }
 
-        public object At(int position)
+        public HeavyObject At(int position)
         {
             return container[position];
         }

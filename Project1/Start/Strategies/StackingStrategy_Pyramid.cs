@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Assi1.Strategies
 {
-    public class StackingStrategy_Pyramid : StackingStrategy
+    class StackingStrategy_Pyramid : StackingStrategy
     {
         public float EvaluateStack(HeavyObjectList input)
         {
@@ -13,7 +13,6 @@ namespace Assi1.Strategies
 
             for (Iterator i = input.CreateIterator(); !i.IsDone(); i.Next())
             {
-                // See note in StackingStrategy_BottomWeight.cs
                 HeavyObject heavyobj = i.CurrentItem();
                 HeavyObject prevobj = i.GetPreviousItem();
 

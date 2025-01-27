@@ -6,7 +6,7 @@ using System.Threading.Tasks.Sources;
 
 namespace Assi1.Strategies
 {
-    public class StackingStrategy_BottomWeight : StackingStrategy
+    class StackingStrategy_BottomWeight : StackingStrategy
     {
         public float EvaluateStack(HeavyObjectList input)
         {
@@ -15,7 +15,7 @@ namespace Assi1.Strategies
 
             for (Iterator i = input.CreateIterator(); !i.IsDone(); i.Next())
             {
-                HeavyObject heavyobj = i.CurrentItem(); // We may have to change type object to HeavyObject. (ex. object First() -> HeavyObject First(); in Iterator.cs)
+                HeavyObject heavyobj = i.CurrentItem();
                 point += heavyobj.Mass / ((float)current);
                 point++;
             }

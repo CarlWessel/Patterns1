@@ -4,13 +4,13 @@ using System.Text;
 
 namespace Assi1.Aggregates
 {
-    public interface Iterator
+    interface Iterator
     {
-        object First();
-        object GetPreviousItem();
+        HeavyObject First();
+        HeavyObject GetPreviousItem();
         void Next();
         bool IsDone();
-        object CurrentItem();
+        HeavyObject CurrentItem();
 
     }
 }

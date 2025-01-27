@@ -4,32 +4,28 @@ using System.Text;
 
 namespace Assi1.Aggregates
 {
-    public class HeavyObjectIterator : Iterator
+    class HeavyObjectIterator : Iterator
     {
-        protected HeavyObjectList aggregate;
-        protected int current = 0;
+        private HeavyObjectList aggregate;
+        private int current = 0;
 
         public HeavyObjectIterator(HeavyObjectList aggregate)
         {
             this.aggregate = aggregate;
         }
 
-        public object CurrentItem()
+        public HeavyObject CurrentItem()
         {
-            if (current >= 0 && current < aggregate.Length())
-            {
-                return aggregate.At(current);
-            }
-            throw new InvalidOperationException("Iterator is out of bounds.");
+            return this.aggregate.At(current);
         }
 
-        public object First()
+        public HeavyObject First()
         {
             current = 0;
             return CurrentItem();
         }
 
-        public object GetPreviousItem()
+        public HeavyObject GetPreviousItem()
         {
             if (current > 0)
             {
