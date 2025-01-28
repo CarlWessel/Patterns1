@@ -7,6 +7,6 @@ namespace Assi1.Aggregates
 {
     interface Aggregate
     {
-        Iterator CreateIterator();
+        IIterator CreateIterator();
     }
 }

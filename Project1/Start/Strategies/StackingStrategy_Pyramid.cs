@@ -5,13 +5,13 @@ using System.Text;
 
 namespace Assi1.Strategies
 {
-    class StackingStrategy_Pyramid : StackingStrategy
+    class StackingStrategy_Pyramid : IStackingStrategy
     {
         public float EvaluateStack(HeavyObjectList input)
         {
             float point = 0;
 
-            for (Iterator i = input.CreateIterator(); !i.IsDone(); i.Next())
+            for (IIterator i = input.CreateIterator(); !i.IsDone(); i.Next())
             {
                 HeavyObject heavyobj = i.CurrentItem();
                 HeavyObject prevobj = i.GetPreviousItem();

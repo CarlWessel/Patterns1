@@ -6,14 +6,14 @@ using System.Threading.Tasks.Sources;
 
 namespace Assi1.Strategies
 {
-    class StackingStrategy_BottomWeight : StackingStrategy
+    class StackingStrategy_BottomWeight : IStackingStrategy
     {
         public float EvaluateStack(HeavyObjectList input)
         {
             float point = 0;
             int current = 1;
 
-            for (Iterator i = input.CreateIterator(); !i.IsDone(); i.Next())
+            for (IIterator i = input.CreateIterator(); !i.IsDone(); i.Next())
             {
                 HeavyObject heavyobj = i.CurrentItem();
                 point += heavyobj.Mass / ((float)current);

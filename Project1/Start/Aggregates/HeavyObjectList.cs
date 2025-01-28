@@ -4,11 +4,11 @@ using System.Text;
 
 namespace Assi1.Aggregates
 {
-    class HeavyObjectList : Aggregate
+    public class HeavyObjectList : Aggregate
     {
         protected List<HeavyObject> container = new List<HeavyObject>();
 
-        public Iterator CreateIterator()
+        public IIterator CreateIterator()
         {
             return new HeavyObjectIterator(this);
         }

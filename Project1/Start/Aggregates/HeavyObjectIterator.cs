@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Assi1.Aggregates
 {
-    class HeavyObjectIterator : Iterator
+    class HeavyObjectIterator : IIterator
     {
         private HeavyObjectList aggregate;
         private int current = 0;

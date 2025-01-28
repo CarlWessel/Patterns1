@@ -15,16 +15,16 @@ namespace Assi1.Flyweights
             Topple
         }
 
-        protected Dictionary<StrategyType, StackingStrategy> strategies;
+        protected Dictionary<StrategyType, IStackingStrategy> strategies;
 
         public FlyweightFactory()
         {
-            strategies = new Dictionary<StrategyType, StackingStrategy>();
+            strategies = new Dictionary<StrategyType, IStackingStrategy>();
         }
 
-        public StackingStrategy GetStrat(StrategyType type)
+        public IStackingStrategy GetStrat(StrategyType type)
         {
-            StackingStrategy strat = null;
+            IStackingStrategy strat;
 
             if (strategies.ContainsKey(type))
             {
