@@ -17,7 +17,7 @@ namespace Assi1.Strategies
             {
                 HeavyObject heavyobj = i.CurrentItem();
                 point += heavyobj.Mass / ((float)current);
-                point++;
+                current++;
             }
 
             return point;

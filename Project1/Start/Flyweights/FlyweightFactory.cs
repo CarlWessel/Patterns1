@@ -22,9 +22,27 @@ namespace Assi1.Flyweights
             strategies = new Dictionary<StrategyType, IStackingStrategy>();
         }
 
-        public IStackingStrategy GetStrat(StrategyType type)
+        public IStackingStrategy GetFlyweight(string inputType)
         {
             IStackingStrategy strat;
+            StrategyType type;
+
+            if(inputType.Equals("bottomWeight"))
+            {
+                type = StrategyType.BottomWeight;
+            }
+            else if (inputType.Equals("pyramid"))
+            {
+                type = StrategyType.Pyramid;
+            }
+            else if (inputType.Equals("topple"))
+            {
+                type= StrategyType.Topple;
+            }
+            else
+            {
+                throw new ArgumentOutOfRangeException("Not a valid stacking strategy.");
+            }
 
             if (strategies.ContainsKey(type))
             {
