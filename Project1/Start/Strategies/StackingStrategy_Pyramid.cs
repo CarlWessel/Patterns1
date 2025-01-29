@@ -10,16 +10,20 @@ namespace Assi1.Strategies
         public float EvaluateStack(HeavyObjectList input)
         {
             float point = 0;
-
+            int current = 0;
             for (IIterator i = input.CreateIterator(); !i.IsDone(); i.Next())
             {
-                HeavyObject heavyobj = i.CurrentItem();
-                HeavyObject prevobj = i.GetPreviousItem();
-
-                if (prevobj != null)
+                if(current != 0)
                 {
-                    point += (((heavyobj.Width * heavyobj.Length) < (prevobj.Width * prevobj.Length)) ? 1 : -1);
+                    HeavyObject heavyobj = i.CurrentItem();
+                    HeavyObject prevobj = i.GetPreviousItem();
+                    i.Next();
+                    if (prevobj != null)
+                    {
+                        point += (((heavyobj.Width * heavyobj.Length) < (prevobj.Width * prevobj.Length)) ? 1 : -1);
+                    }
                 }
+                current++;
             }
 
             return point;

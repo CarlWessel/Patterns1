@@ -56,11 +56,11 @@ namespace Assi1
             Console.WriteLine("BottomWeight - ListA: " + bottomWeight.EvaluateStack(listA));
             Console.WriteLine("BottomWeight - ListB: " + bottomWeight.EvaluateStack(listB));
             Console.WriteLine("BottomWeight - ListC: " + bottomWeight.EvaluateStack(listC));
-            /*
+            
             Console.WriteLine("Pyramid - ListA: " + pyramid.EvaluateStack(listA));
             Console.WriteLine("Pyramid - ListB: " + pyramid.EvaluateStack(listB));
             Console.WriteLine("Pyramid - ListC: " + pyramid.EvaluateStack(listC));
-            
+            /*
             Console.WriteLine("Topple - ListA: " + topple.EvaluateStack(listA));
             Console.WriteLine("Topple - ListB: " + topple.EvaluateStack(listB));
             Console.WriteLine("Topple - ListC: " + topple.EvaluateStack(listC));
