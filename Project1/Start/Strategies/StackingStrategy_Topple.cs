@@ -5,11 +5,38 @@ using System.Text;
 
 namespace Assi1.Strategies
 {
-    internal class StackingStrategy_Topple : IStackingStrategy
+    class StackingStrategy_Topple : IStackingStrategy
     {
         public float EvaluateStack(HeavyObjectList input)
         {
-            throw new NotImplementedException();
+            float score = 0;
+            IIterator iterator = input.CreateIterator();
+
+            HeavyObject prevObject = null;
+
+            while (!iterator.IsDone())
+            {
+                HeavyObject currentObject = iterator.CurrentItem();
+
+                if (prevObject != null)
+                {
+                    bool isStable = (currentObject.Width < prevObject.Width) && (currentObject.Length < prevObject.Length);
+
+                    if (isStable == true)
+                    {
+                        score -= 1;
+                    }
+                    else
+                    {
+                        score += 1;
+                    }
+                }
+
+                prevObject = currentObject;
+                iterator.Next();
+            }
+
+            return score;
         }
     }
 }
