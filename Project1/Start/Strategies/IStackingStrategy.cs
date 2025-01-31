@@ -9,6 +9,8 @@ using System.Text;
  *  Cody Sykes
  *  Trishia Salamangkit
  *  Ethan Reimer
+ *  
+ *  Purpose: Strategy Interface to evaluate list of heavy objects via input
  */
 
 namespace Assi1.Strategies

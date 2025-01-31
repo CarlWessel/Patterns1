@@ -10,6 +10,8 @@ using static Assi1.Flyweights.FlyweightFactory;
  *  Cody Sykes
  *  Trishia Salamangkit
  *  Ethan Reimer
+ *  
+ *  Purpose: Flyweight pattern used to reuse stacking strategy instances
  */
 
 namespace Assi1.Flyweights
