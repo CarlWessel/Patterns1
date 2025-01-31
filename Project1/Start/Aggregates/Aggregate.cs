@@ -4,12 +4,12 @@ using System.Text;
 
 /*
  * Group memebers:
- *  Carl
- *  Cody
- *  Trish
- *  Ethan
+ *  Carl Wessel
+ *  Cody Sykes
+ *  Trishia Salamangkit
+ *  Ethan Reimer
  *  
- * Purpose: interface to for creating an iterator to taverse list
+ * Purpose: Interface for creating an iterator to traverse list
  */
 
 namespace Assi1.Aggregates

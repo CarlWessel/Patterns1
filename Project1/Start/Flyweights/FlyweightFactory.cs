@@ -6,10 +6,10 @@ using static Assi1.Flyweights.FlyweightFactory;
 
 /*
  * Group memebers:
- *  Carl
- *  Cody
- *  Trish
- *  Ethan
+ *  Carl Wessel
+ *  Cody Sykes
+ *  Trishia Salamangkit
+ *  Ethan Reimer
  */
 
 namespace Assi1.Flyweights

@@ -4,10 +4,10 @@ using System.Text;
 
 /*
  * Group memebers:
- *  Carl
- *  Cody
- *  Trish
- *  Ethan
+ *  Carl Wessel
+ *  Cody Sykes
+ *  Trishia Salamangkit
+ *  Ethan Reimer
  *  
  *  Purpose: Implements iterator class to iterate through a heavyobjectlist
  */

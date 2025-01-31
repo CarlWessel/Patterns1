@@ -5,10 +5,10 @@ using System.Text;
 
 /*
  * Group memebers:
- *  Carl
- *  Cody
- *  Trish
- *  Ethan
+ *  Carl Wessel
+ *  Cody Sykes
+ *  Trishia Salamangkit
+ *  Ethan Reimer
  *  
  *  Purpose: A strategy for comparing width and length of heavy weight objects to see which list of heavyobjects would topple the easiest
  */

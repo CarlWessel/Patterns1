@@ -4,10 +4,10 @@ using System.Text;
 
 /*
  * Group memebers:
- *  Carl
- *  Cody
- *  Trish
- *  Ethan
+ *  Carl Wessel
+ *  Cody Sykes
+ *  Trishia Salamangkit
+ *  Ethan Reimer
  *  
  *  Purpose: Interface methods to traverse a collection using First(), GetPrevious(), Next(), IsDone(), and CurrentItem()
  */

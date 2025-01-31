@@ -5,12 +5,12 @@ using System.Text;
 
 /*
  * Group memebers:
- *  Carl
- *  Cody
- *  Trish
- *  Ethan
+ *  Carl Wessel
+ *  Cody Sykes
+ *  Trishia Salamangkit
+ *  Ethan Reimer
  *  
- *  Purpose: A strategy for comparing width and length of heavy weight objects to see which list of heavyobjects would topple the easiest
+ *  Purpose: Implements the IStackingStrategy interface and evaluates a stack based on a pyramid-like structure. It rewards stacks where each object is smaller in width and length than the one below it.
  */
 
 namespace Assi1.Strategies

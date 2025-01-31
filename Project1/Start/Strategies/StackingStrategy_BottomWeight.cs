@@ -6,12 +6,12 @@ using System.Threading.Tasks.Sources;
 
 /*
  * Group memebers:
- *  Carl
- *  Cody
- *  Trish
- *  Ethan
+ *  Carl Wessel
+ *  Cody Sykes
+ *  Trishia Salamangkit
+ *  Ethan Reimer
  *  
- *  Purpose:
+ *  Purpose: Implements the IStackingStrategy interface and evaluates a stack of Heavy Objects using a weighted approach. Rewards stacks where weight is concentrated near the bottom of the stack.
  */
 
 namespace Assi1.Strategies

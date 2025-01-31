@@ -4,10 +4,10 @@ using System.Text;
 
 /*
  * Group memebers:
- *  Carl
- *  Cody
- *  Trish
- *  Ethan
+ *  Carl Wessel
+ *  Cody Sykes
+ *  Trishia Salamangkit
+ *  Ethan Reimer
  *  
  *  Purpose: Class that implements Aggregate for storing heavyObject allowing iteration to use HeavyObjectIterator
  */
