@@ -2,6 +2,16 @@
 using System.Collections.Generic;
 using System.Text;
 
+/*
+ * Group memebers:
+ *  Carl
+ *  Cody
+ *  Trish
+ *  Ethan
+ *  
+ *  Purpose: Class that implements Aggregate for storing heavyObject allowing iteration to use HeavyObjectIterator
+ */
+
 namespace Assi1.Aggregates
 {
     public class HeavyObjectList : Aggregate

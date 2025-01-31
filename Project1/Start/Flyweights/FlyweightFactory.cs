@@ -4,6 +4,14 @@ using System.Collections.Generic;
 using System.Text;
 using static Assi1.Flyweights.FlyweightFactory;
 
+/*
+ * Group memebers:
+ *  Carl
+ *  Cody
+ *  Trish
+ *  Ethan
+ */
+
 namespace Assi1.Flyweights
 {
     public class FlyweightFactory

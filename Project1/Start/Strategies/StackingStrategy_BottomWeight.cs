@@ -4,6 +4,16 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks.Sources;
 
+/*
+ * Group memebers:
+ *  Carl
+ *  Cody
+ *  Trish
+ *  Ethan
+ *  
+ *  Purpose:
+ */
+
 namespace Assi1.Strategies
 {
     class StackingStrategy_BottomWeight : IStackingStrategy

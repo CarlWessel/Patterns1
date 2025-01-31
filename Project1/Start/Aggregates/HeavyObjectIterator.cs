@@ -2,6 +2,16 @@
 using System.Collections.Generic;
 using System.Text;
 
+/*
+ * Group memebers:
+ *  Carl
+ *  Cody
+ *  Trish
+ *  Ethan
+ *  
+ *  Purpose: Implements iterator class to iterate through a heavyobjectlist
+ */
+
 namespace Assi1.Aggregates
 {
     class HeavyObjectIterator : IIterator

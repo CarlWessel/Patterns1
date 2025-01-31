@@ -3,6 +3,16 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
+/*
+ * Group memebers:
+ *  Carl
+ *  Cody
+ *  Trish
+ *  Ethan
+ *  
+ *  Purpose: A strategy for comparing width and length of heavy weight objects to see which list of heavyobjects would topple the easiest
+ */
+
 namespace Assi1.Strategies
 {
     class StackingStrategy_Pyramid : IStackingStrategy
